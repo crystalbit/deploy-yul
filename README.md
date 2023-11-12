@@ -4,10 +4,11 @@ Contracts for Foundry for deploying yul and bytecode contracts.
 [Example foundry project](https://github.com/crystalbit/foundry-yul-boilerplate) using these contracts
 
 ## Installation to a Foundry project
+1) Install this repo as git submodule
 ```
 forge install git@github.com:crystalbit/deploy-yul.git
 ```
-Then update remappings (or do it manually the way you want):
+2) Update remappings (or do it manually the way you want):
 ```
 forge remappings > remappings.txt
 ```
@@ -17,6 +18,15 @@ You will likely have these remappings after updating:
 deploy-yul/=lib/deploy-yul/contracts/
 ds-test/=lib/forge-std/lib/ds-test/src/
 forge-std/=lib/forge-std/src/
+```
+3) Add ffi support into settings – `ffi = true` in `[profile.default]` section in `foundry.toml`. It allows to run external file (`solc` compiler in case of this module).  
+My foundry.toml:
+```toml
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+ffi = true
 ```
 
 ## Deploying Yul
