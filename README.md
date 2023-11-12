@@ -26,7 +26,11 @@ forge-std/=lib/forge-std/src/
 ```
 import "deploy-yul/YulDeployer.sol";
 ```
-4) Deploy in your deploy script or test like this:
+4) Create yulDeployer in test contract/script state (after `contract` keyword and before functions):
+```
+YulDeployer yulDeployer = new YulDeployer();
+```
+5) Deploy in your deploy script or test like this:
 ```
 address ContractName = yulDeployer.deployContract("ContractName");
 ```
@@ -38,7 +42,11 @@ address ContractName = yulDeployer.deployContract("ContractName");
 ```
 import "deploy-yul/BytecodeDeployer.sol";
 ```
-4) Deploy in your deploy script or test like this:
+4) Create bytecodeDeployer in test contract/script state (after `contract` keyword and before functions):
+```
+BytecodeDeployer bytecodeDeployer = new BytecodeDeployer();
+```
+5) Deploy in your deploy script or test like this:
 ```
 address ContractName = bytecodeDeployer.deployContract("ContractName");
 ```
