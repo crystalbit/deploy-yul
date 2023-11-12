@@ -20,7 +20,11 @@ forge-std/=lib/forge-std/src/
 ## Deploying Yul
 1) Create folder `yul` in the root of your project
 2) Create contract with `.yul` extension there, for example `ContractName.yul`
-3) Deploy in your deploy script or test like this:
+3) Use this import in your deploy script or test:
+```
+import "deploy-yul/YulDeployer.sol";
+```
+4) Deploy in your deploy script or test like this:
 ```
 address ContractName = yulDeployer.deployContract("ContractName");
 ```
@@ -28,7 +32,11 @@ address ContractName = yulDeployer.deployContract("ContractName");
 ## Deploying bytecode
 1) Create folder `bytecode` in the root of your project
 2) Create contract with `.hex` extension there, for example `ContractName.hex`
-3) Deploy in your deploy script or test like this:
+3) Use this import in your deploy script or test:
+```
+import "deploy-yul/BytecodeDeployer.sol";
+```
+4) Deploy in your deploy script or test like this:
 ```
 address ContractName = bytecodeDeployer.deployContract("ContractName");
 ```
