@@ -23,6 +23,7 @@ contract YulDeployer is Test {
 
     ///@notice deploy the bytecode with the create instruction
     address deployedAddress;
+    vm.broadcast();
     assembly {
       deployedAddress := create(0, add(bytecode, 0x20), mload(bytecode))
     }
