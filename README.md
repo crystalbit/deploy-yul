@@ -1,6 +1,8 @@
 # deploy-yul
 Contracts for Foundry for deploying yul and bytecode contracts.
 
+[Example foundry project](https://github.com/crystalbit/foundry-yul-boilerplate) using these contracts
+
 ## Installation to a Foundry project
 ```
 forge install git@github.com:crystalbit/deploy-yul.git
