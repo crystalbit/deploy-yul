@@ -3,6 +3,8 @@ Contracts for Foundry for deploying yul and bytecode contracts.
 
 [Example foundry project](https://github.com/crystalbit/foundry-yul-boilerplate) using these contracts
 
+[Instruction on YouTube](https://www.youtube.com/watch?v=lwvUiRIU_Po) 
+
 ## Installation to a Foundry project
 1) Install this repo as git submodule
 ```
