@@ -88,3 +88,6 @@ object "Basic" {
 only first line of this file is used
 you can write comments here
 ```
+
+## Credits
+Based on [this repo](https://github.com/CodeForcer/foundry-yul/), fixed deprecated solc parameters, added deploy possibility, added BytecodeDeployer
